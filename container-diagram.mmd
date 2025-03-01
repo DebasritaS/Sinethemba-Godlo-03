@@ -1,0 +1,20 @@
+C4Container
+    title Automated User Access Review System - Containers Diagram
+
+    Container(webApp, "Web Application", "Provides the user interface for administrators and managers.", "Angular/React")
+    Container(api, "API", "Handles business logic and data processing.", "Node.js/Python (Flask/Django)")
+    ContainerDb(database, "Database", "Stores user access data, review configurations, and audit trails.", "PostgreSQL/MySQL")
+    Container(accessSync, "Access Sync Service", "Synchronizes user access data from resource systems and IdP.", "Java/Go")
+    Container(notificationService, "Notification Service", "Sends email notifications for review tasks and approvals.", "Python/Node.js")
+    Container(reportGenerator, "Report Generator", "Generates access review reports.", "Python/Java")
+
+    Rel(webApp, api, "API Calls")
+    Rel(api, database, "Reads/Writes Data")
+    Rel(accessSync, database, "Writes Data")
+    Rel(accessSync, identityProvider, "Retrieves User Data")
+    Rel(accessSync, resourceSystem, "Retrieves Access Data")
+    Rel(api, accessSync, "Triggers Synchronization")
+    Rel(api, notificationService, "Sends Notifications")
+    Rel(api, reportGenerator, "Generates Reports")
+    Rel(reportGenerator, database, "Reads Data")
+    Rel(api, auditLog, "Writes Audit Logs")

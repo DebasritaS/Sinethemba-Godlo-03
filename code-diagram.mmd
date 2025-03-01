@@ -1,0 +1,24 @@
+C4Component
+    title Automated User Access Review System - Review Management - Code Diagram
+
+    Component(reviewManagement, "Review Management", "Manages access review workflows.", "API")
+
+    Class(ReviewCycle, "ReviewCycle", "Represents a review cycle with start and end dates and status.")
+    Class(ReviewTask, "ReviewTask", "Represents a review task assigned to a reviewer.")
+    Class(ReviewerAssignment, "ReviewerAssignment", "Represents the assignment of a reviewer to a resource.")
+    Class(AccessRule, "AccessRule", "Represents a rule for access review.")
+    Class(ReviewWorkflow, "ReviewWorkflow", "Manages the overall review process.")
+    Interface(ReviewRepository, "ReviewRepository", "Interface for data persistence.")
+    Class(JdbcReviewRepository, "JdbcReviewRepository", "Implementation of ReviewRepository using JDBC.")
+
+    Rel(reviewManagement, ReviewWorkflow, "Uses")
+    Rel(ReviewWorkflow, ReviewCycle, "Manages")
+    Rel(ReviewWorkflow, ReviewTask, "Manages")
+    Rel(ReviewWorkflow, ReviewerAssignment, "Manages")
+    Rel(ReviewWorkflow, AccessRule, "Applies")
+    Rel(ReviewWorkflow, ReviewRepository, "Uses")
+    Rel(JdbcReviewRepository, ReviewRepository, "Implements")
+    Rel(ReviewTask, ReviewerAssignment, "Relates to")
+
+    ContainerDb(database, "Database", "Stores review data.", "PostgreSQL/MySQL")
+    Rel(JdbcReviewRepository, database, "Reads/Writes Data")

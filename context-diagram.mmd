@@ -1,17 +1,2 @@
-C4Context
-    title Automated User Access Review System - System Context Diagram
-
-    Person(admin, "Security Administrator", "Manages user access reviews, generates reports, and configures the system.")
-    Person(manager, "Line Manager", "Reviews and approves/revokes user access for their team members.")
-    System(accessReviewSystem, "Automated User Access Review System", "Automates the process of user access review and certification.")
-    System_Ext(identityProvider, "Identity Provider (IdP)", "Manages user identities and authentication (e.g., Azure AD, Okta).")
-    System_Ext(resourceSystem, "Resource System", "Systems containing resources with user access (e.g., File Servers, Databases, Applications).")
-    System_Ext(auditLog, "Audit Log System", "Stores audit logs of user access and review activities.")
-
-    Rel(admin, accessReviewSystem, "Configures, Manages, and Generates Reports")
-    Rel(manager, accessReviewSystem, "Reviews and Approves/Revokes Access")
-    Rel(accessReviewSystem, identityProvider, "Retrieves User Information")
-    Rel(accessReviewSystem, resourceSystem, "Retrieves Access Permissions")
-    Rel(accessReviewSystem, auditLog, "Stores Audit Logs")
 
 https://uml.planttext.com/plantuml/png/ZPD1QyCm38NlWVm7aLCBAxllC1es68KEIijkkvX4pSGQkzXAk_xxoLRIBLjNThCb-zFBUyuyiF7SjRiyO-8TGjcnQmrZ3Iy1FPHLXI706W-4HzYS0cCBis7nu2pZ1yCZcSQRDi_op5JiF1GRh3fFV8AoRibIO6-aNe09O6BbV7195k7PMDEWjbjTHvR7YerjH5Nn3raAJmsjQtc4MTHeESfQUNUWMaYJHRsQljg9IWZGHJpfCPAziJMOZjzYeJ9CpaxJeFx8QG2DngmnkCvNs2iJV7JAa0tW-rQ08_6RZbFHoXtw5yINNKqCIzTyOJVYOHIPEZlN173RxymatwjBOZWTqaVff7H9Q2crc0dCPlSN38GxA4J-bffEPjtqOSaYif_GeaIBCOkzynoAFEiJl8BJlQehztkn4CEj5DsxW3JR8hwGNtSZygVp2cHFA1Hz7WkxTRvDQVtD6JizflJlQuM-fH04SqNFu6Caz7cSauhNycoEjaw_s2S0

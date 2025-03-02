@@ -7,5 +7,5 @@ A User Access Review is a crucial component of the organization's security and c
 *https://github.com/Godlos252/Sinethemba-Godlo-03/blob/a7ec3083da46b3128e5f42a69303ea279964be3e/SPECIFICATION.md*
 
 **ARCHITECTURE.md**
-*https://github.com/Godlos252/Sinethemba-Godlo-03/blob/a7ec3083da46b3128e5f42a69303ea279964be3e/ARCHITECTURE.md*
+*[https://github.com/Godlos252/Sinethemba-Godlo-03/blob/a7ec3083da46b3128e5f42a69303ea279964be3e/ARCHITECTURE.md](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/050bf11267ad6c24066728adfb464cbfe4671043/ARCHITECTURE.md)*
 

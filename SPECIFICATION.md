@@ -9,13 +9,13 @@ The system operates within the domain of Identity and Access Management (IAM), f
 It is difficult for organisations to maintain secure and compliant access control because of a manual, inconsistent, and time-consuming review process. Not having an automated method increases the risk of outdated user permissions, which could lead to security vulnerabilities, violations of compliance, and operational inefficiencies. Additionally, staff movement is a major issue, as users will retain access to their previous roles and responsibilities.
 
 ### The Automated User Access Review System aims to:
-- Streamline access reviews through automation.
-- Ensure compliance with security policies and regulations.
-- Reduce administrative overhead by providing scheduled and ad-hoc access reviews.
-- Enhance security by enforcing periodic reviews and requiring managerial approvals for revocations.
-- Improve visibility and reporting with comprehensive logs and dashboards.
+- **Streamline** access reviews through automation.
+- **Ensure compliance** with security policies and regulations.
+- **Reduce administrative overhead** by providing scheduled and ad-hoc access reviews.
+- **Enhance security** by enforcing periodic reviews and requiring managerial approvals for revocations.
+- **Improve visibility and reporting** with comprehensive logs and dashboards.
 
-## Individual Scope & Feasibility Justification
+## Individual Scope and Feasibility Justification
 
 The system is feasible due to the following factors:
 
@@ -32,7 +32,7 @@ The system is feasible due to the following factors:
 
 ### Operational Feasibility:
 - Integrates with existing user management systems (Active Directory, Okta, LDAP, etc.).
-- Provides customizable workflows to match different organizational needs.
+- Provides customizable workflows to match different organisational needs.
 - Sends notifications and alerts to ensure timely reviews and approvals.
 
 This system ensures better security, compliance, and efficiency while keeping managerial control over access revocations to prevent unintended disruptions.

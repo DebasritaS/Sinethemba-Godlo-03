@@ -1,4 +1,4 @@
-**Automated Access Review System**
+**Automated User Access Review System**
 
 # Domain
 

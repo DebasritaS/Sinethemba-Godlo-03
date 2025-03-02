@@ -1,0 +1,53 @@
+@startuml
+!define RECTANGLE class
+
+title Automated User Access Review System - Containers Diagram
+
+RECTANGLE WebApp {
+  "Web Application" as webApp
+  :Provides the user interface for administrators and managers.;
+  :Angular/React;
+}
+
+RECTANGLE API {
+  "API" as api
+  :Handles business logic and data processing.;
+  :Node.js/Python (Flask/Django);
+}
+
+RECTANGLE Database {
+  "Database" as database
+  :Stores user access data, review configurations, and audit trails.;
+  :PostgreSQL/MySQL;
+}
+
+RECTANGLE AccessSync {
+  "Access Sync Service" as accessSync
+  :Synchronizes user access data from resource systems and IdP.;
+  :Java/Go;
+}
+
+RECTANGLE NotificationService {
+  "Notification Service" as notificationService
+  :Sends email notifications for review tasks and approvals.;
+  :Python/Node.js;
+}
+
+RECTANGLE ReportGenerator {
+  "Report Generator" as reportGenerator
+  :Generates access review reports.;
+  :Python/Java;
+}
+
+WebApp --> API : API Calls
+API --> Database : Reads/Writes Data
+AccessSync --> Database : Writes Data
+AccessSync --> IdentityProvider : Retrieves User Data
+AccessSync --> ResourceSystem : Retrieves Access Data
+API --> AccessSync : Triggers Synchronization
+API --> NotificationService : Sends Notifications
+API --> ReportGenerator : Generates Reports
+ReportGenerator --> Database : Reads Data
+API --> AuditLog : Writes Audit Logs
+
+@enduml

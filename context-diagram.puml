@@ -1,0 +1,18 @@
+@startuml
+title Automated User Access Review System - System Context Diagram
+
+actor "Security Administrator" as admin
+actor "Line Manager" as manager
+
+rectangle "Automated User Access Review System" as accessReviewSystem
+rectangle "Identity Provider (IdP)\n(Manages user identities and authentication)" as identityProvider
+rectangle "Resource System\n(Contains resources with user access)" as resourceSystem
+rectangle "Audit Log System\n(Stores audit logs of user access and review activities)" as auditLog
+
+admin --> accessReviewSystem : "Configures, Manages, and Generates Reports"
+manager --> accessReviewSystem : "Reviews and Approves/Revokes Access"
+accessReviewSystem --> identityProvider : "Retrieves User Information"
+accessReviewSystem --> resourceSystem : "Retrieves Access Permissions"
+accessReviewSystem --> auditLog : "Stores Audit Logs"
+
+@enduml

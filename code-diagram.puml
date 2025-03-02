@@ -1,0 +1,26 @@
+@startuml
+title Automated User Access Review System - Review Management - Code Diagram
+
+rectangle "Review Management\n(Manages access review workflows)" as reviewManagement
+rectangle "Review Cycle\n(Represents a review cycle with start and end dates and status)" as reviewCycle
+rectangle "Review Task\n(Represents a review task assigned to a reviewer)" as reviewTask
+rectangle "Reviewer Assignment\n(Represents the assignment of a reviewer to a resource)" as reviewerAssignment
+rectangle "Access Rule\n(Represents a rule for access review)" as accessRule
+rectangle "Review Workflow\n(Manages the overall review process)" as reviewWorkflow
+rectangle "Review Repository\n(Interface for data persistence)" as reviewRepository
+rectangle "Jdbc Review Repository\n(Implementation of ReviewRepository using JDBC)" as jdbcReviewRepository
+database "Database (PostgreSQL/MySQL)" as database
+
+reviewManagement --> reviewWorkflow : "Uses"
+reviewWorkflow --> reviewCycle : "Manages"
+reviewWorkflow --> reviewTask : "Manages"
+reviewWorkflow --> reviewerAssignment : "Manages"
+reviewWorkflow --> accessRule : "Applies"
+reviewWorkflow --> reviewRepository : "Uses"
+jdbcReviewRepository --> reviewRepository : "Implements"
+reviewTask --> reviewerAssignment : "Relates to"
+
+jdbcReviewRepository --> database : "Reads/Writes Data"
+reviewWorkflow --> database : "Reads/Writes Data"
+
+@enduml

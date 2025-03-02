@@ -1,27 +1,29 @@
 @startuml
 title Automated User Access Review System - API Components Diagram
 
-Container(api, "API", "Handles business logic and data processing.", "Node.js/Python (Flask/Django)")
+rectangle "API (Node.js/Python)" as api
+rectangle "User Management\n(Handles authentication & authorization)" as userManagement
+rectangle "Review Management\n(Manages access review workflows)" as reviewManagement
+rectangle "Access Data Service\n(Retrieves and processes user access data)" as accessData
+rectangle "Notification Adapter\n(Adapts to the notification service)" as notificationAdapter
+rectangle "Report Adapter\n(Adapts to report generation service)" as reportAdapter
+rectangle "Audit Log Adapter\n(Adapts to audit log service)" as auditLogAdapter
+database "Database (PostgreSQL/MySQL)" as database
 
-Component(userManagement, "User Management", "Handles user authentication and authorization.", "API")
-Component(reviewManagement, "Review Management", "Manages access review workflows.", "API")
-Component(accessData, "Access Data Service", "Retrieves and processes user access data.", "API")
-Component(notificationAdapter, "Notification Adapter", "Adapts to the notification service.", "API")
-Component(reportAdapter, "Report Adapter", "Adapts to the report generation service.", "API")
-Component(auditLogAdapter, "Audit Log Adapter", "Adapts to the audit log service.", "API")
+api --> userManagement : "Uses"
+api --> reviewManagement : "Uses"
+api --> accessData : "Uses"
+api --> notificationAdapter : "Uses"
+api --> reportAdapter : "Uses"
+api --> auditLogAdapter : "Uses"
 
-Rel(api, userManagement, "Uses")
-Rel(api, reviewManagement, "Uses")
-Rel(api, accessData, "Uses")
-Rel(api, notificationAdapter, "Uses")
-Rel(api, reportAdapter, "Uses")
-Rel(api, auditLogAdapter, "Uses")
+accessData --> database : "Reads Data"
+reviewManagement --> database : "Reads/Writes Data"
+userManagement --> database : "Reads Data"
 
-ContainerDb(database, "Database", "Stores user access data, review configurations, and audit trails.", "PostgreSQL/MySQL")
-Rel(accessData, database, "Reads Data")
-Rel(reviewManagement, database, "Reads/Writes Data")
-Rel(userManagement, database, "Reads Data")
-Rel(auditLogAdapter, auditLog, "Writes Audit Logs")
-Rel(reportAdapter, reportGenerator, "Generates Reports")
-Rel(notificationAdapter, notificationService, "Sends Notifications")
+auditLogAdapter --> database : "Writes Audit Logs"
+reportAdapter --> database : "Generates Reports"
+notificationAdapter --> database : "Sends Notifications"
+
 @enduml
+

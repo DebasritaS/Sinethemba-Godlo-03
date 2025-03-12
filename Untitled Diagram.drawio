@@ -46,6 +46,14 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="a8vrUaEyxEgkCQSDoEBb-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="a8vrUaEyxEgkCQSDoEBb-6" target="a8vrUaEyxEgkCQSDoEBb-34">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="200" />
+              <mxPoint x="230" y="685" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="a8vrUaEyxEgkCQSDoEBb-6" value="Identity and Access&lt;div&gt;Management Team&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="410" y="170" width="30" height="60" as="geometry" />
         </mxCell>

@@ -18,7 +18,7 @@ https://github.com/Godlos252/Sinethemba-Godlo-03/blob/635f06209b650824d8478e935b
 ## REFLECTION.md
 https://github.com/Godlos252/Sinethemba-Godlo-03/blob/635f06209b650824d8478e935b2ecc32d6205d54/REFLECTION.md
 
-## Use Case Diagram
+## USE CASE DIAGRAM
 https://github.com/Godlos252/Sinethemba-Godlo-03/blob/6316171b0792bb96ca471876ab16e765891bfead/Update%20User%20Case%20Diagram.drawio.png
 
 **Use case breakdown**
@@ -34,3 +34,6 @@ https://github.com/Godlos252/Sinethemba-Godlo-03/blob/6316171b0792bb96ca471876ab
 10.	**Manage System Security & Configurations** – Ensures system security. **(*IT Admin and IAM Team*)**
 11.	**Ensure Data Storage & Retrieval** – Manages secure data. **(*Database Administrators*)**
 12.	**Monitor and Optimize System Performance** – Ensures system reliability. **(*DevOps Team*)**
+
+## USE CASE SPECIFICATION
+https://github.com/Godlos252/Sinethemba-Godlo-03/blob/4ef09e05d5f34bee8cb72a23f0177d991052e351/USE%20CASE%20SPECIFICATION.md

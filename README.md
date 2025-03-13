@@ -18,3 +18,19 @@ https://github.com/Godlos252/Sinethemba-Godlo-03/blob/635f06209b650824d8478e935b
 **REFLECTION.md**
 https://github.com/Godlos252/Sinethemba-Godlo-03/blob/635f06209b650824d8478e935b2ecc32d6205d54/REFLECTION.md
 
+**Use Case Diagram**
+https://github.com/Godlos252/Sinethemba-Godlo-03/blob/6316171b0792bb96ca471876ab16e765891bfead/Update%20User%20Case%20Diagram.drawio.png
+
+## Use case breakdown.
+1.	**Schedule Access Reviews** – Initiates periodic access reviews. **(*IAM Team*)**
+2.	**Assign Reviewers** – Assigns appropriate reviewers. **(*IT Admin*)**
+3.	**Approve/Reject Access** – Approves or revokes access. **(*Managers/HOD and Access Owners Reviewers*)**
+4.	**Generate Compliance Reports** – Provides reports for compliance. **(*CIO, Audit Teams, and External Auditors*)**
+5.	**Send Notifications & Reminders** – Automates review alerts. **(*Managers/HOD and Access Owners Reviewers*)**
+6.	**Auto-Revoke Unapproved Access** – Revokes access if not approved. **(*End-Users, Risk Team and IAM Team*)**
+7.	**Integrate with IAM & HR Systems** – Connects with identity and HR data. **(*IAM Team*)**
+8.	**Audit Logging & Monitoring** – This ensures security tracking. **(*CIO, System Users, and Audit Teams*)**
+9.	**Develop and Maintain System Automation** – System updates & automation. **(*Developers & Software Engineers*)**
+10.	**Manage System Security & Configurations** – Ensures system security. **(*IT Admin and IAM Team*)**
+11.	**Ensure Data Storage & Retrieval** – Manages secure data. **(*Database Administrators*)**
+12.	**Monitor and Optimize System Performance** – Ensures system reliability. **(*DevOps Team*)**

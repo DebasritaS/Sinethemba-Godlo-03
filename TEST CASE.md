@@ -1,4 +1,4 @@
-# TEST CASE
+# 1. TEST CASE
 
 |Test Case ID	 |Test Case Name         |	Description                                                |	Preconditions	                                        |Test Steps	                            | Expected Result |	Status|
 --------------|-----------------------|------------------------------------------------------------| -------------------------------------------------------|----------------------------------------|-----------------|-------|
@@ -13,5 +13,56 @@
 
 
 
+# 2. NON-FUNCTIONAL TEST SCENARIOS
+## Perfomance Test Scenario
 
+Test Objective: Ensure the system can handle high user load and process access reviews efficiently.
+
+Scenario: 
+
+- Create 500 concurrent users log in and review access requests.
+  
+- Measure response timer for:
+  
+      - Loading the dashboard
+  
+      - Approving/rejecting access requests
+  
+      - Generating compliance reports
+  
+- Validating that the system latency remains below 2 seconds per action.
+
+Expect Results:
+
+- The system should not exceed 2 seconds response time under load.
+  
+- No timeout errors or system crashes should occur.
+
+## Security Test Scenario
+
+Test Objective: Validate system security against unauthorized access and data breaches.
+
+Scenario:
+
+- Perform access testing by attemping to:
+  
+      - Do SQL Injection in access review queries.
+  
+      - Unauthorised access to another user's access review tasks.
+  
+      - API calls for forged authentication tokens.
+  
+- Check if security policies enforce:
+  
+      - Role-based access control (RBAC)
+  
+      - Data encryption for stored and transmitted information
+  
+Expected Results
+
+- System prevents SQL injection attempts
+  
+- Unauthorized users cannot access the restricted review tasks.
+  
+- Encrypted data cannot be decrypted without proper access.
 

@@ -42,3 +42,4 @@ A User Access Review is a crucial component of the organization's security and c
 # Agile User Stories, Backlog, and Sprint Planning
 
 ## [AGILE PLANNING DOCUMENT](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/ca5b4e338465419facda394345cf08b52b5795cb/Updated%20Project%20Documentation.md)
+## [REFLECTION ON ALIGNING AGILE WITH STAKEHOLDERS](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/95c8f2229645460177dafea9ba7bec4515311e48/REFLECTION%20ON%20ALIGNING%20AGILE%20WITH%20STAKEHOLDERS.md)

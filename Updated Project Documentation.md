@@ -56,7 +56,7 @@
 |USNF-002	|As a **Security Administrator**, I want the system to enforce multi-factor authentication (MFA) so that only authorized users can access sensitive review data.	|Must-have	|5	|None|
 |USNF-003|	As an **IT Administrator**, I want the system to automatically scale based on load so that performance remains stable under high traffic.|Should-have	|8	|USNF-001|
 |USNF-004	|As a **Compliance Officer**, I want all access review actions to be logged so that audit trails are available for compliance verification.|	Must-have|3	|None|
-|USNF-005|	As a **Database Administrator**, I want data encryption at rest and in transit so that sensitive access information is secure.	|Must-have|	5	|None|
+|USNF-005|	As a **Database Administrator**, I want data encryption at rest and in transit to secure sensitive access information.	|Must-have|	5	|None|
 |USNF-006|	As an **End User**, I want the system to provide a simple and intuitive interface so that I can complete access reviews efficiently.|	Could-have|	3	|None|
 |USNF-007	|As a **System Administrator**, I want the system to provide real-time monitoring and alerts so that I can proactively address performance or security issues.	|Should-have|	5|	USNF-001|
 |USNF-008|	As a **Manager**, I want the system to maintain 99.9% uptime so that access reviews are not disrupted.|	Must-have|	5	|USNF-003|
@@ -74,4 +74,4 @@
 |T-005	|Integrate IAM and HR systems for real-time user access updates	|Integration Engineer|	12	|To Do|
 |T-006	|Set up automated revocation process for unapproved access	|Backend Developer|	8|To Do|
 
-
+This sprint delivers the primary access review functionality required for the MVP. By completing this sprint, we will enable IT administrators and managers to schedule access reviews, assign reviewers, approve/reject requests, and generate compliance reports. This ensures the system can support basic access review cycles while maintaining security and compliance.

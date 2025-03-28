@@ -45,3 +45,19 @@ The project has been created under **[Project](https://github.com/users/Godlos25
 
 ## [AGILE PLANNING DOCUMENT](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/ca5b4e338465419facda394345cf08b52b5795cb/Updated%20Project%20Documentation.md)
 ## [REFLECTION ON ALIGNING AGILE WITH STAKEHOLDERS](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/95c8f2229645460177dafea9ba7bec4515311e48/REFLECTION%20ON%20ALIGNING%20AGILE%20WITH%20STAKEHOLDERS.md)
+
+# Project Templates and Kanban Board Implementation
+
+## Template Analysis and Selection
+
+## Custom Kanban Board Creation
+
+I have added:
+  - **Backlog** because it stores all upcoming tasks, features, and ideas.
+  - **To Do** prioritizes tasks ready to be worked on in the current sprint.
+  - **In Progress** shows the tasks currently being worked on.
+  - **Testing** shows completed tasks waiting for QA or validation before deployment.
+  - **Blocked Tasks** that are stuck due to dependencies, approval, or issues.
+  - **Done** successfully completed tasks.
+
+

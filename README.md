@@ -65,5 +65,5 @@ I have added:
     
 ## [Kanban Board Explanation](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/8696f7ea6eb3d20fdac4513417eae86eaed3ccbf/Kanban_Explanation.md)
 
-## [Reflection]()
+## [Reflection](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/c638da9db63ba9a0f9c93fb9a6ebe06a80b7f722/Reflection%20on%20selecting%20and%20customizing%20the_Template..md)
 

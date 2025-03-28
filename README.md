@@ -63,5 +63,7 @@ I have added:
   - **Blocked Tasks** that are stuck due to dependencies, approval, or issues.
   - **Done** successfully completed tasks.
     
-## [Kanban Board Explanation](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/593de4793e6b601c9243eb376b1a9b808c0543e7/PROJECT%20TEMPLATES%20AND%20KANBAN%20BOARD%20IMPLEMENTATION.md)
+## [Kanban Board Explanation](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/8696f7ea6eb3d20fdac4513417eae86eaed3ccbf/Kanban_Explanation.md)
+
+## [Reflection]()
 

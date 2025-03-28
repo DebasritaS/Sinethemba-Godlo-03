@@ -48,9 +48,9 @@ The project has been created under **[Project](https://github.com/users/Godlos25
 
 # Project Templates and Kanban Board Implementation
 
-## Template Analysis and Selection
+## [Template Analysis and Selection](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/593de4793e6b601c9243eb376b1a9b808c0543e7/PROJECT%20TEMPLATES%20AND%20KANBAN%20BOARD%20IMPLEMENTATION.md)
 
-## Custom Kanban Board Creation
+## [Custom Kanban Board Creation](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/593de4793e6b601c9243eb376b1a9b808c0543e7/PROJECT%20TEMPLATES%20AND%20KANBAN%20BOARD%20IMPLEMENTATION.md)
 
 I have added:
   - **Backlog** because it stores all upcoming tasks, features, and ideas.
@@ -59,5 +59,6 @@ I have added:
   - **Testing** shows completed tasks waiting for QA or validation before deployment.
   - **Blocked Tasks** that are stuck due to dependencies, approval, or issues.
   - **Done** successfully completed tasks.
-
+    
+## [Kanban Board Explanation](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/593de4793e6b601c9243eb376b1a9b808c0543e7/PROJECT%20TEMPLATES%20AND%20KANBAN%20BOARD%20IMPLEMENTATION.md)
 

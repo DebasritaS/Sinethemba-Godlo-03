@@ -9,3 +9,9 @@ I have created a **Kanban Template**, a **Custom Template**, and a **Bug Tracker
 | **Custom Template** | Fully customizable columns & workflows                 | Teams with unique workflows                  | Requires manual setup |
 
 I have chosen **Kanban Board** because it enhances the workflow visibility, efficiency, and productivity. Also assist in identifying the bottleneck, keeping teams on track, and measuring success.
+
+# 2 Custom Kanban Board Creation
+
+![image](https://github.com/user-attachments/assets/26ab36b1-5abd-41c2-a603-22ef94101cf0)
+
+

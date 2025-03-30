@@ -51,7 +51,7 @@ The project has been created under **[Project](https://github.com/users/Godlos25
 ## [Template Analysis and Selection](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/ab07d17e623ba6b07f29827153115134d9c29757/Template_Anaylsis.md)
 
 
-## 2. Custom Kanban Board Creation
+## Custom Kanban Board Creation
 
 ![image](https://github.com/user-attachments/assets/26ab36b1-5abd-41c2-a603-22ef94101cf0)
 

@@ -67,3 +67,12 @@ I have added:
 
 ## [Reflection](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/c638da9db63ba9a0f9c93fb9a6ebe06a80b7f722/Reflection%20on%20selecting%20and%20customizing%20the_Template..md)
 
+# Object State Modeling and Activity Workflow Modeling Objective
+
+## [State Transition Diagrams](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/c88e02316af9e3fb344af0b7a8dac1feeaec30c6/State%20Transition%20Diagrams.md)
+
+## [Activity Diagrams](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/c88e02316af9e3fb344af0b7a8dac1feeaec30c6/Activity%20Diagrams.md)
+
+## [Explanations of State Transition Diagrams](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/c88e02316af9e3fb344af0b7a8dac1feeaec30c6/Explanation%20of%20State%20Transition%20Diagrams.md)
+
+## [Explanations of State Transition Diagrams](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/c88e02316af9e3fb344af0b7a8dac1feeaec30c6/Explanation%20of%20Activity%20Diagrams.md)

@@ -76,3 +76,5 @@ I have added:
 ## [Explanations of State Transition Diagrams](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/c88e02316af9e3fb344af0b7a8dac1feeaec30c6/Explanation%20of%20State%20Transition%20Diagrams.md)
 
 ## [Explanations of State Transition Diagrams](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/c88e02316af9e3fb344af0b7a8dac1feeaec30c6/Explanation%20of%20Activity%20Diagrams.md)
+
+## [Reflection of Object State and Activity Workflow](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/3597eb5ee75ffbd1656c256ad3ae3b61a0a35310/Object_State_and_Activity_Workflow_Reflection.md)

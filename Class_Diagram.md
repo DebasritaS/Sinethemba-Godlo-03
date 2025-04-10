@@ -83,9 +83,11 @@ classDiagram
 ```
 
 
-AccessRequest status has these values: Pending, Approved, Rejected, Escalated.
-ReviewCycle is used to group tasks under a review period
-Resource sensitivity is used for risk-based access control
+**AccessRequest** status has these values: Pending, Approved, Rejected, Escalated.
+
+**ReviewCycle** is used to group tasks under a review period.
+
+**Resource sensitivity** is used for risk-based access control.
 
 
 

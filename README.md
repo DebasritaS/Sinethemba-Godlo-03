@@ -78,3 +78,11 @@ I have added:
 ## [Explanations of State Transition Diagrams](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/c88e02316af9e3fb344af0b7a8dac1feeaec30c6/Explanation%20of%20Activity%20Diagrams.md)
 
 ## [Reflection of Object State and Activity Workflow](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/3597eb5ee75ffbd1656c256ad3ae3b61a0a35310/Object_State_and_Activity_Workflow_Reflection.md)
+
+# Domain Modeling and Class Diagram Development
+
+## [Domain Model Documentation](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/eaaae9029e7262af7459a5c85dae0923ec857615/Domain_Model.md)
+
+## [Class Diagram in Mermaid.js](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/eaaae9029e7262af7459a5c85dae0923ec857615/Class_Diagram.md)
+
+## [Reflection](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/eaaae9029e7262af7459a5c85dae0923ec857615/Refelction_Domain_Modelling_and_Class_Diagram.md)

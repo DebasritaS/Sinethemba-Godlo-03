@@ -1,0 +1,11 @@
+# Below is the domain model description in a table 
+
+|Entity|	Attributes	|Methods	|Relationships|	Business Rules   |
+|------|--------------|---------|-------------|------------------|
+|**User**	|`userId`, `name`, `email`, `role`, `department`, `status`	|`requestAccess()`, `appealRejection()`, `viewAccessRights()`	|- Has many `AccessRequests` <br> - Reviewed by `Reviewer`	|- A user must belong to a valid department. <br>- Users with inactive status cannot request access.|
+|**AccessRequest**|	`requestId`, `userId`, `resourceId`, `status`, `requestDate`, `justification`|	`submit()`, `cancel()`, `updateJustification()`	|- Belongs to one `User`<br> - Reviewed by `ReviewTask`|	- Access requests must include a justification.<br> - Only one active request per user per resource.|
+|**ReviewTask**|	`taskId`, `reviewerId`, `accessRequestId`, `status`, `reviewDate`, `decision`|	`approve()`, `reject()`, `comment()`	|- Assigned to one `Reviewer` <br>- Reviews one `AccessRequest`	|- Reviewer cannot review their access requests. <br>- Each task must be completed within the review cycle deadline.|
+|**ReviewCycle**|	`cycleId`, `startDate`, `endDate`, `status`,` initiatedBy`	|`startCycle(`), `closeCycle()`,` notifyReviewers()`	|- Contains many `ReviewTasks` <br>- Created by an `Administrator`	|- Review cycles must have a unique time frame. <br>- A cycle can only be closed when all tasks are resolved.|
+|**Reviewer**|	`reviewerId`, `name`, `email`, `role`, `assignedTasks[]`|	`performReview()`,`escalateDecision()`|- Assigned to `ReviewTasks`<br> - Can be an `AccessOwner or Manager`	|- Reviewer must be authorized for the department or resource they review. <br>- Reviewer may escalate if uncertain.|
+|**AuditLog**|	`logId`, `action`, `actorId`, `timestamp`, `targetEntity`, `details`	|`recordAction()`	|- Logs actions on `AccessRequest`, `ReviewTask`, `ReviewCycle`	|- Every access decision must be logged.<br> - Audit logs must be permanent and encrypted.|
+|**Resource**|	`resourceId`, `name`, `ownerId`, `accessLevel`, `sensitivity`	|`assignOwner()`, `updateSensitivity()`|	- Requested by `Users`<br> - Reviewed via `AccessRequest`	|- Resources with high sensitivity require dual approval. <br>- Owners must re-certify access rights periodically.|

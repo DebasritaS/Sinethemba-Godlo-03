@@ -1,0 +1,55 @@
+[Diagram Link] (https://uml.planttext.com/plantuml/png/VPHDRnen48RlIFo7QKwj5B9tAbL1a58gYYWaodbO3ulJNHlPNY9QzRztF6jOljJBQZsUZyVlZFte0xfGLsMtyq7HMXk2nTFmUJ0RJvyWBz7xRgVR2JgK18Cws0e3ANZnv62Gv-GzB6YdwHsMUn-eWXuChGd8UPo7aSR2OHKpj4bVQJNORk5FjmDmnmlWLQbp3DgQEq0Fx-8Gj_jpPtTQaOUm8QXZKMq2kJNc16lh05MbZVR1OR1S3us22WqMNFpXisGOcA8kqMKBmZomwUyvp60-IIJy9zLngoNm6oShkVAgzdmOFcTf2vrB2OK1OUjiFBusHQeqiueUtdmstuUDDV3nAultAnkzeIdif-lA8qwoGa-f_64f32ej9E-IZyOSSdfi98_xz-0QuNDhrhgedGZexuKGQwK3i2owF0WnjpuKZfO_fzcFFNzlQ279btkJ7oHfgebbIMwdymOFZuuD8Fzid3NwzmrCM3jRCQgtjUEcUPcIfbCJDKzitt67sTXU8yriqEiq6uaWiPtkdC6Pwv26aepoG1LBSkRZPP2Ibe5Rri3XbXkymrO-wMgMcdnDkg2jTM5CFFTn5XDbOuMZMGZTkQkaJoiwY7i0Qdml8A9S1u9qctgzBpBBVVaEiIpvtiRVk74SjJvZelBPgzEnLBIpLzls2-V_kKqK6NuLzkc6EiaTdAOTHyZpS3DiaGOXlHQdGMdQKbX2FmdlmxFJHRpQq4wSjB1rlpKlVMXQVxft8ivbu_hGzgBPO-TBfrkgNfB7ApYrHQkZM81DygG-CfGyk_y0)
+
+@startuml
+!define RECTANGLE class
+
+title Automated User Access Review System - Containers Diagram
+
+RECTANGLE WebApp {
+  "Web Application" as webApp
+  :Provides the user interface for administrators and managers.;
+  :Angular/React;
+}
+
+RECTANGLE API {
+  "API" as api
+  :Handles business logic and data processing.;
+  :Node.js/Python (Flask/Django);
+}
+
+RECTANGLE Database {
+  "Database" as database
+  :Stores user access data, review configurations, and audit trails.;
+  :PostgreSQL/MySQL;
+}
+
+RECTANGLE AccessSync {
+  "Access Sync Service" as accessSync
+  :Synchronizes user access data from resource systems and IdP.;
+  :Java/Go;
+}
+
+RECTANGLE NotificationService {
+  "Notification Service" as notificationService
+  :Sends email notifications for review tasks and approvals.;
+  :Python/Node.js;
+}
+
+RECTANGLE ReportGenerator {
+  "Report Generator" as reportGenerator
+  :Generates access review reports.;
+  :Python/Java;
+}
+
+WebApp --> API : API Calls
+API --> Database : Reads/Writes Data
+AccessSync --> Database : Writes Data
+AccessSync --> IdentityProvider : Retrieves User Data
+AccessSync --> ResourceSystem : Retrieves Access Data
+API --> AccessSync : Triggers Synchronization
+API --> NotificationService : Sends Notifications
+API --> ReportGenerator : Generates Reports
+ReportGenerator --> Database : Reads Data
+API --> AuditLog : Writes Audit Logs
+
+@enduml

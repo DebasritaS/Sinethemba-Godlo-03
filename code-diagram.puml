@@ -1,0 +1,28 @@
+[Diagram Link] (https://uml.planttext.com/plantuml/png/ZLHDJ-Cm4Br7odyOvSGUAkuSLfJs0W9fj-oA2nUJJ8CXiIFFXAh_ViTEtIHT5pWqgkttuNapoJMnSjotJPwnvWPXsRDj5MC5VmaTBCiIYM237nftyBWdnXOMSVsWZAgnHSEojx8Lmbghsgasp_BCOSdArA9P_0T_DXV3Wa0D3cw0xAnxtpPsHpyAK75tvALKL_koGH7SOEUG12IQKQxqPx3J_0gXK52c0fHV9ILIMCa-zpEx89Xo-gFe_OmHov4eaAwDHCVsU89kAkqL4ie-wC0zP3Dnu5Syw8QOxNQY77t8zgx4gG-wKM_c5_lP9oAJFTXQD-_8e3fiULOgbwT3qoPTzTUs7-XKqyI8EcUzoFIQaPWIbRjPqcpTNcHl3QFRgdAue3HFGOUEj8oZcLS-qcQYTzLB2Kdbjcl2Q2dMrlXyDoSwq9CsDTojRrQ3qPjedOBop5_gHP5uhUE_Yr-Mk7Ru-Fl-yc4lpu4VaSDBCXzmM2n-deG3Lr38kqX5H1yFHcmOMGyyvFyPri_WDw7JCVgICiw8Xowxhj6VgqyY7ajCXNkMSspUw1EgEr_11flmvhCjVFndtOxT31nLqUMJqvxecvikwYjAdbtBboTyQly1)
+
+@startuml
+title Automated User Access Review System - Review Management - Code Diagram
+
+rectangle "Review Management\n(Manages access review workflows)" as reviewManagement
+rectangle "Review Cycle\n(Represents a review cycle with start and end dates and status)" as reviewCycle
+rectangle "Review Task\n(Represents a review task assigned to a reviewer)" as reviewTask
+rectangle "Reviewer Assignment\n(Represents the assignment of a reviewer to a resource)" as reviewerAssignment
+rectangle "Access Rule\n(Represents a rule for access review)" as accessRule
+rectangle "Review Workflow\n(Manages the overall review process)" as reviewWorkflow
+rectangle "Review Repository\n(Interface for data persistence)" as reviewRepository
+rectangle "Jdbc Review Repository\n(Implementation of ReviewRepository using JDBC)" as jdbcReviewRepository
+database "Database (PostgreSQL/MySQL)" as database
+
+reviewManagement --> reviewWorkflow : "Uses"
+reviewWorkflow --> reviewCycle : "Manages"
+reviewWorkflow --> reviewTask : "Manages"
+reviewWorkflow --> reviewerAssignment : "Manages"
+reviewWorkflow --> accessRule : "Applies"
+reviewWorkflow --> reviewRepository : "Uses"
+jdbcReviewRepository --> reviewRepository : "Implements"
+reviewTask --> reviewerAssignment : "Relates to"
+
+jdbcReviewRepository --> database : "Reads/Writes Data"
+reviewWorkflow --> database : "Reads/Writes Data"
+
+@enduml

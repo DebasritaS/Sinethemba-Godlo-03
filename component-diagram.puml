@@ -1,0 +1,31 @@
+[Diagram Link] (https://uml.planttext.com/plantuml/png/VPJ1Rjim38Rl0V8EH0v3UaXpxs6eqG1hWRR86WoxxCBPZAlEbWo9Jf0z_IZ9IMn1tIMmoPyVgL-CxnsZvRvjvZDMt10KFPiMcIhuuSX2KPRa7BpHGT4HTYV7rC8AYkqJF9YsCveqEzWeh2ssyzbyPgbarBMG5bwqV3KLtNwuzVR4xqRVB00TOAScmj3f1JNMr0hlbru-eguQ4cNFxn9H9R8o6hw4WB7gRtYFj5wghyKJy33s11rV11rFPgFaQEoVVMEEBZ9Zz1FguCa66M57zg1A4kuRiLLqy6HTGMUD5r4SxzoiafB1WX3mY0dwrR3QdqzRLDWnMM679mTiGEm0FHQvE42aZZD3TU97PondmJQcQj9aC-IOpZ6Blb8CpwREOZ5a6ybES24iDHUWT-OtEk5jpa_BhN5SMzfzVrw_dEGtbfwLVjbaaM2r-fgi0Do5bNABgo2zpupaUYEPPCROR9UHIRaMqrEF5AAvjlVIYnzt_jQmYkksyCud9ycgrp-jOheK9Vxyju6CaeoPoWVsvU9T66jyzBJYMzmgyXyIh_CLEKlJkXrf6MpyfuXctKiyVBF-0G00)
+
+@startuml
+title Automated User Access Review System - API Components Diagram
+
+rectangle "API (Node.js/Python)" as api
+rectangle "User Management\n(Handles authentication & authorization)" as userManagement
+rectangle "Review Management\n(Manages access review workflows)" as reviewManagement
+rectangle "Access Data Service\n(Retrieves and processes user access data)" as accessData
+rectangle "Notification Adapter\n(Adapts to the notification service)" as notificationAdapter
+rectangle "Report Adapter\n(Adapts to report generation service)" as reportAdapter
+rectangle "Audit Log Adapter\n(Adapts to audit log service)" as auditLogAdapter
+database "Database (PostgreSQL/MySQL)" as database
+
+api --> userManagement : "Uses"
+api --> reviewManagement : "Uses"
+api --> accessData : "Uses"
+api --> notificationAdapter : "Uses"
+api --> reportAdapter : "Uses"
+api --> auditLogAdapter : "Uses"
+
+accessData --> database : "Reads Data"
+reviewManagement --> database : "Reads/Writes Data"
+userManagement --> database : "Reads Data"
+
+auditLogAdapter --> database : "Writes Audit Logs"
+reportAdapter --> database : "Generates Reports"
+notificationAdapter --> database : "Sends Notifications"
+
+@enduml
+

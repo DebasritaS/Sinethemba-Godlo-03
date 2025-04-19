@@ -7,7 +7,7 @@ from notification_service import NotificationService
 from datetime import datetime
 
 # Create instances
-user = User(user_id=1001, name="Alice", email="alice@example.com", roles=["Reviewer"])
+user = User(user_id=1, name="Alice", email="alice@example.com", roles=["Reviewer"])
 print("User ID:", user.get_user_id())
 print("Name:", user.get_name())
 print("Email:", user.get_email())

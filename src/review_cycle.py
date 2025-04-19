@@ -10,3 +10,20 @@ class ReviewCycle:
 
     def get_pending_tasks(self):
         return [task for task in self.__tasks if not task._ReviewTask__completed]
+
+class ReviewCycle:
+    def __init__(self, name, start, end):
+        self.name = name
+        self.start = start
+        self.end = end
+        self.status = "Open"
+        self.tasks = []
+
+    def add_task(self, task):
+        self.tasks.append(task)
+
+    def close_cycle(self):
+        self.status = "Closed"
+
+    def get_status(self):
+        return self.status

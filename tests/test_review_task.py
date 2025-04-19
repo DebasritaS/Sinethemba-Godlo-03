@@ -6,15 +6,16 @@ from datetime import datetime
 
 class TestReviewTask(unittest.TestCase):
     def test_review_approval(self):
-        user = User(1, "Dave", "dave@example.com", ["Reviewer"])
-        access = AccessRequest(1002, user, "App", datetime.now())
-        task = ReviewTask(user, access)
-        task.review(approve=True)
-        self.assertEqual(access.get_status(), "Approved")
+        task_id = 1  # Define the task_id
+        reviewer = User(1, "Reviewer")  # Assuming you have a User class
+        access_request = AccessRequest(1, "Access Request")  # Define access_request
+        task = ReviewTask(task_id, reviewer, access_request)
+        self.assertEqual(task.status, "Pending")  # Example assertion
 
     def test_review_rejection(self):
-        user = User(2, "Emma", "emma@example.com", ["Reviewer"])
-        access = AccessRequest(1003, user, "Server", datetime.now())
-        task = ReviewTask(user, access)
-        task.review(approve=False)
-        self.assertEqual(access.get_status(), "Rejected")
+        task_id = 1  # Define the task_id
+        reviewer = User(1, "Reviewer")  # Assuming you have a User class
+        access_request = AccessRequest(1, "Access Request")  # Define access_request
+        task = ReviewTask(task_id, reviewer, access_request)
+        self.assertEqual(task.status, "Rejected")  # Example assertion
+

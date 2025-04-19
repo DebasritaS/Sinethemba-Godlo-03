@@ -3,7 +3,7 @@ from src.user import User
 
 class TestUser(unittest.TestCase):
     def test_user_creation(self):
-        user = User(1001, "Alice", "alice@example.com", ["Reviewer"])
+        user = User(1, "Alice", "alice@example.com", ["Reviewer"])
         self.assertEqual(user.get_user_id(), 1)
         self.assertIn("Reviewer", user.get_roles())
 

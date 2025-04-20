@@ -18,5 +18,5 @@ class TestAccessRequest(unittest.TestCase):
     def test_invalid_status_change(self):
         self.request.reject()
         self.request.revoke()
-        self.assertEqual(self.request.get_status(), "Revoked")  # Should be latest
+        self.assertEqual(self.request.get_status(), "Revoked") 
 

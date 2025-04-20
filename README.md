@@ -189,6 +189,10 @@ I have chosen this language because of:
 - **Why?** These objects are straightforward and do not involve optional parameters.
 - **Benefit:** Keeps implementation clean and avoids unnecessary complexity where a pattern is not needed.
 
+## Change Log
+
+### [ChangeLog](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/0f1643db39b564355b35d094f4cdf5e930364cea/CHANGELOG.md)
+
 
  
 

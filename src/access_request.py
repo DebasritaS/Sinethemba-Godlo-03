@@ -9,7 +9,7 @@ class AccessStatus(Enum):
 class AccessRequest:
     def __init__(self, request_id, user, resource, date_requested):
         self.__request_id = request_id
-        self.__user = user  # Association to User
+        self.__user = user 
         self.__resource = resource
         self.__status = AccessStatus.PENDING
         self.__date_requested = date_requested

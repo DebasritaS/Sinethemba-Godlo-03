@@ -87,12 +87,110 @@ I have added:
 
 ## [Reflection](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/eaaae9029e7262af7459a5c85dae0923ec857615/Refelction_Domain_Modelling_and_Class_Diagram.md)
 
-# Creational Patterns
+# Class Implementation, Creational Patterns
 
 ## Source Code:
+### [Click here for Code of Class Implementation /scr](https://github.com/Godlos252/Sinethemba-Godlo-03/tree/ad5c7265c00dbabf35b3458406c41dd63dde34a5/src)
+
+To run the code, you will have to set up the environment (Windows) and run the following command on the terminal:
+
+-**"python main.py"**
+
+![image](https://github.com/user-attachments/assets/b40d5aeb-0770-42e8-a601-15b83280d719)
+
+
+### [Click here for Code of Creational Patterns /creational_patterns](https://github.com/Godlos252/Sinethemba-Godlo-03/tree/e12d522b476805c26b66409f330b1d69629bc2ee/creational_patternss)
+To run the code, you will have to set up the environment (Windows) and run the following command on the terminal: 
+
+- **python main.py**
+
+![image](https://github.com/user-attachments/assets/b3753ecd-9057-4892-84f6-a8e1bb2bea0e)
+
 
 ## Tests:
 
+### [Click here for Code of Testing /tests](https://github.com/Godlos252/Sinethemba-Godlo-03/tree/e12d522b476805c26b66409f330b1d69629bc2ee/tests)
+
+To run the code, you will have to set up the environment (Windows) and run the following command on the terminal: 
+- **pip install coverage**
+- **PYTHONPATH="."**
+- **python -m unittest discover -s tests**
+
+![image](https://github.com/user-attachments/assets/9a91807e-36c6-409c-b70b-7cf329de4caa)
+
+### Coverage Report
+
+To run the code, you will have to set up the environment (Windows) and run the following command on the terminal: 
+
+- **python -m coverage report -m**
+
+![image](https://github.com/user-attachments/assets/ba185072-b064-47c7-87ae-fbe919af9e14)
+![image](https://github.com/user-attachments/assets/87b75018-13f4-4f80-a471-46e505639e75)
+![image](https://github.com/user-attachments/assets/d67011fd-fdb8-43f4-bc0a-731ca5fbc093)
+
+
+
 ## Documentation:
+
+### Language Choice: Python 
+
+I have chosen this language because of:
+
+-**Simplicity and Readability:** Python's clean syntax made it easier to design, develop, and test complex system components like access requests, review cycles, and audit logs.
+-**Rapid Prototyping:** Python allowed for faster iteration during development and debugging.
+-**Strong Ecosystem:** Libraries like `unittest` for testing and `coverage` for test coverage helped enforce code quality and reliability.
+-**Cross-platform Support:** Python runs smoothly across operating systems, which is useful for team collaboration and testing.
+
+### Key Design Decisions
+
+### ✅ Modular Architecture
+- Classes like `User`, `AccessRequest`, `ReviewTask`, `ReviewCycle`, `AuditLog`, and `NotificationService` were each defined in separate modules under the `src/` directory.
+- This structure follows the **Single Responsibility Principle** and makes unit testing easier.
+  
+### ✅ Clear Object-Oriented Structure
+- Classes were chosen to represent real-world entities:
+  - `User`: represents a system user.
+  - `AccessRequest`: captures access request data.
+  - `ReviewTask`: manages review assignments.
+  - `ReviewCycle`: tracks periodic reviews.
+  - `AuditLog`: records actions.
+  - `NotificationService`: handles alerts.
+- This made the code easy to extend and modify.
+
+### ✅ Focus on Testability
+
+- Used Python's built-in `unittest` framework for reliable and repeatable testing.
+- Each class has dedicated test files under the `tests/` directory.
+- Implemented **edge case** handling and validated correct initialization of attributes.
+- 
+### ✅ Audit Logging
+
+- The `AuditLog` class ensures all critical events (like approvals or rejections) are captured for traceability and accountability.
+
+### ✅ Notification Handling
+
+- A minimal `NotificationService` was implemented to create user alerts and support communication channels like email/SMS notifications.
+
+### Creational Patterns Justification
+
+### ✅ Builder Pattern – `AccessRequest`
+- **Why?** The `AccessRequest` object may contain multiple optional fields in real-world implementations (e.g., justification, urgency, resource type).
+- **Benefit:** The builder pattern allows constructing complex access requests step-by-step while keeping the constructor clean and readable.
+- 
+### ✅ Factory Pattern – `ReviewTaskFactory` (optional enhancement)
+- **Why?** If different types of review tasks (e.g., manual, automated, escalated) are required, a Factory pattern can generate the correct `ReviewTask` subtype based on parameters.
+- **Benefit:** Simplifies object creation logic and allows extension without modifying client code.
+
+### ✅ Singleton Pattern – `AuditLog`
+- **Why?** The `AuditLog` acts as a centralized logger for all security-related actions. To maintain integrity, only one log should exist per runtime.
+- **Benefit:** Ensures consistency and global access to a shared logging mechanism.
+
+### ✅ Simple Instantiation – `User`, `NotificationService`
+- **Why?** These objects are straightforward and do not involve optional parameters.
+- **Benefit:** Keeps implementation clean and avoids unnecessary complexity where a pattern is not needed.
+
+
+ 
+
 
 

@@ -3,7 +3,7 @@ class ReviewCycle:
         self.__cycle_id = cycle_id
         self.__start_date = start_date
         self.__end_date = end_date
-        self.__tasks = []  # Composition of ReviewTasks
+        self.__tasks = []  
 
     def add_task(self, task):
         self.__tasks.append(task)

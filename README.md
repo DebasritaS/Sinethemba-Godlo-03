@@ -223,6 +223,10 @@ Why Not Only Dependency Injection?
 
 ### [Tests]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/5514b56b8c199cde20b784fa6038f5afdb389d03/tests/test_user_repository.py)
 
+To run the code, you will have to set up the environment (Windows) and run the following command on the terminal: 
+
+- **python -m coverage report -m**
+
 ![image](https://github.com/user-attachments/assets/b1433233-1d8a-4e65-9009-812ad226f1a1)
 
 

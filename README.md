@@ -194,6 +194,39 @@ I have chosen this language because of:
 ### [ChangeLog](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/0f1643db39b564355b35d094f4cdf5e930364cea/CHANGELOG.md)
 
 
+# Implementing a Persistence Repository Layer
+
+### [Repository Interfaces]( https://github.com/Godlos252/Sinethemba-Godlo-03/tree/5514b56b8c199cde20b784fa6038f5afdb389d03/src/repositories)
+
+Entity-specific repositories like `UserRepository`, `AccessRequestRepository`, and `ReviewCycleRepository` extend the generic repository interface we designed to abstract CRUD operations over domain entities. This separation enhances maintainability, allows mocking repositories in unit tests, and adheres to clean architecture principles.
+
+
+### [In-Memory Implementation]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/5514b56b8c199cde20b784fa6038f5afdb389d03/src/repositories/in_memory_repository.py)
+
+
+### [Abstraction Mechanism]( https://github.com/Godlos252/Sinethemba-Godlo-03/tree/714ffc9884a3f6c727ac8b738b2016d574bfbc70/src/factories)
+
+I implemented the **Factory Pattern** instead of direct **Dependency Injection (DI)** for this project to manage repository instantiation.
+
+Reason for Choosing the Factory Pattern:
+
+- **Flexibility to Switch Storage Backends:** By using a RepositoryFactory, the system can easily switch between different storage implementations (e.g., in-memory, SQL database) without modifying business logic.
+- **Centralized Creation Logic:** All instantiation details are isolated inside the factory class. This simplifies the management of different repository types, especially when new backends are added.
+- **Reduces Tight Coupling:** Client classes (like services or controllers) don't need to know which storage backend they are working with — they just ask the factory for a repository. This aligns well with the Open/Closed Principle.
+- **Ease of Testing:** During unit testing, a mock or in-memory repository can be injected easily by having the factory return a test version.
+
+Why Not Only Dependency Injection?
+
+- DI is great, but if used alone, it would require wiring dependencies manually throughout the application or adding a separate DI container.
+- For a small-to-medium project like this, a Factory provides a simpler and more maintainable solution without the complexity of a full DI framework.
+
+
+### [Tests]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/5514b56b8c199cde20b784fa6038f5afdb389d03/tests/test_user_repository.py)
+
+![image](https://github.com/user-attachments/assets/b1433233-1d8a-4e65-9009-812ad226f1a1)
+
+
+
  
 
 

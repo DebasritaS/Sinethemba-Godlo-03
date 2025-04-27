@@ -217,8 +217,8 @@ Reason for Choosing the Factory Pattern:
 
 Why Not Only Dependency Injection?
 
-- DI is great, but if used alone, it would require wiring dependencies manually throughout the application or adding a separate DI container.
-- For a small-to-medium project like this, a Factory provides a simpler and more maintainable solution without the complexity of a full DI framework.
+- **DI** is great, but if used alone, it would require wiring dependencies manually throughout the application or adding a separate **DI** container.
+- For a small-to-medium project like this, a **Factory** provides a simpler and more maintainable solution without the complexity of a full **DI** framework.
 
 
 ### [Tests]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/5514b56b8c199cde20b784fa6038f5afdb389d03/tests/test_user_repository.py)

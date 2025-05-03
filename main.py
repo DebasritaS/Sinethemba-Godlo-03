@@ -5,6 +5,10 @@ from review_cycle import ReviewCycle
 from audit_log import AuditLog
 from notification_service import NotificationService
 from datetime import datetime
+from fastapi import FastAPI
+from src.routers import review_cycle_router, audit_log_router
+from fastapi import FastAPI
+from routes import user_routes
 
 # Create instances
 user = User(user_id=1, name="Alice", email="alice@example.com", roles=["Reviewer"])
@@ -63,3 +67,21 @@ start_date = datetime(2025, 4, 1)
 end_date = datetime(2025, 6, 30)
 cycle = ReviewCycle("Quarterly", start_date, end_date)
 cycle.add_task(task)
+
+app = FastAPI()
+
+app.include_router(review_cycle_router.router, prefix="/review-cycles", tags=["Review Cycles"])
+app.include_router(audit_log_router.router, prefix="/audit-logs", tags=["Audit Logs"])
+
+app = FastAPI(...)
+app.include_router(user_routes.router)
+
+app = FastAPI(
+    title="User Access Review API",
+    description="Manages users, access requests, review cycles, and audit logs for an access management system.",
+    version="1.0.0",
+    contact={
+        "name": "Sinethemba Godlo",
+        "email": "youremail@example.com",
+    }
+)

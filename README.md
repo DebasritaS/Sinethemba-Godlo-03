@@ -257,6 +257,11 @@ I received an error message when I wanted to run the http://localhost:8001/docs
 
 ![image](https://github.com/user-attachments/assets/665c3c63-c353-4884-8ea3-248f3abb1f81)
 
+## Github updates
+
+![image](https://github.com/user-attachments/assets/b615ebad-128e-45e1-a68f-9f89d80f2f9d)
+
+
 
 
 

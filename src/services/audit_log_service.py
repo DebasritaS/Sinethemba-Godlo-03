@@ -1,4 +1,4 @@
-from src.models.audit_log import AuditLog
+from src.models.entities.audit_log import AuditLog
 from src.repositories.audit_log_repository import AuditLogRepository
 from datetime import datetime
 from typing import List

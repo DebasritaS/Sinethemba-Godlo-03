@@ -24,3 +24,24 @@ class Repository(ABC, Generic[T, ID]):
     @abstractmethod
     def list_all(self) -> List[T]:
         pass
+
+from typing import Generic, TypeVar
+
+T = TypeVar("T")
+ID = TypeVar("ID")
+
+class Repository(Generic[T, ID]):
+    def get(self, id: ID) -> T:
+        raise NotImplementedError
+
+    def get_all(self) -> list[T]:
+        raise NotImplementedError
+
+    def create(self, entity: T) -> T:
+        raise NotImplementedError
+
+    def update(self, id: ID, entity: T) -> T:
+        raise NotImplementedError
+
+    def delete(self, id: ID) -> None:
+        raise NotImplementedError

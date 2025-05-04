@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from src.models.review_cycle import ReviewCycle
+from src.models.review_cycle import ReviewCycleCreateRequest, ReviewCycleResponse
 from src.services.review_cycle_service import ReviewCycleService
 from src.repositories.review_cycle_repository import ReviewCycleRepository
 

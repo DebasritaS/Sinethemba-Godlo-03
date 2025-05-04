@@ -1,7 +1,8 @@
-from src.models.review_cycle import ReviewCycle
+from src.models.review_cycle import ReviewCycleCreateRequest, ReviewCycleResponse
 from src.repositories.review_cycle_repository import ReviewCycleRepository
 from datetime import datetime
 from typing import List
+from src.models.entities.review_cycle import ReviewCycle
 
 
 class ReviewCycleService:

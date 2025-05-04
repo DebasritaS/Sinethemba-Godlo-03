@@ -229,6 +229,37 @@ To run the code, you will have to set up the environment (Windows) and run the f
 
 ![image](https://github.com/user-attachments/assets/b1433233-1d8a-4e65-9009-812ad226f1a1)
 
+# Service Layer and REST API Implementation
+
+## Service Layer:
+
+### [Service classes](https://github.com/Godlos252/Sinethemba-Godlo-03/tree/9d0a72f8a15a916280a3156e7c22e622072fa407/src/services)
+
+### [Unit tests]( https://github.com/Godlos252/Sinethemba-Godlo-03/tree/1399363e2ec64a84e4f155da566611a409eadca7/tests/services)
+
+## REST API:
+
+### [API code]( https://github.com/Godlos252/Sinethemba-Godlo-03/tree/9d0a72f8a15a916280a3156e7c22e622072fa407/api)
+
+
+### [Integration tests]( https://github.com/Godlos252/Sinethemba-Godlo-03/tree/9d0a72f8a15a916280a3156e7c22e622072fa407/tests)
+
+To run the code, you will have to set up the environment (Windows) and run the following command on the terminal: 
+
+uvicorn main:app –reload –port 8001
+
+![image](https://github.com/user-attachments/assets/5bbc7d9b-9673-4a0a-b0f5-056adc84a852)
+![image](https://github.com/user-attachments/assets/e50cdcb6-a575-4e6b-ba53-32d62922132c)
+
+## Documentation
+
+I received an error message when I wanted to run the http://localhost:8001/docs
+
+![image](https://github.com/user-attachments/assets/665c3c63-c353-4884-8ea3-248f3abb1f81)
+
+
+
+
 
 
  

@@ -261,6 +261,94 @@ I received an error message when I wanted to run the http://localhost:8001/docs
 
 ![image](https://github.com/user-attachments/assets/b615ebad-128e-45e1-a68f-9f89d80f2f9d)
 
+# Implementing CI/CD with GitHub Actions
+
+## Branch Protection Setup
+
+The following are screenshots of my main branch protection rules:
+
+![image](https://github.com/user-attachments/assets/e4528364-b964-46a8-af4d-3b9db59063a1)
+
+![image](https://github.com/user-attachments/assets/5e73c6f9-49bc-4d47-a85a-567383bb5886)
+
+### [Protection.md]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/db4a7f656ccb1a8d05091c81d9b581833309d0c4/PROTECTION.md)
+
+## CI Pipeline: Test Automation
+
+## CD Pipeline: Release Artifact
+
+## Documentation & PR Workflow
+
+1. **Running Tests Locally**
+  
+  Make sure all dependencies are installed by running the following command:
+
+  *pip install -r requirements.txt*
+  
+  Then run the tests using
+  
+  *PYTHONPATH=. Pytest*
+
+2. **This project uses GitHub Actions for CI/CD. The pipeline runs automatically when you push a commit or create a pull request.**
+
+•	**Pull Requests (PRs):**
+  
+	    Run tests (pytest)
+  
+	    Lint the code (if configured)
+  
+	    Must pass status checks before merging
+  
+•	**Merges to main:**
+
+    Run tests
+    
+	  Build the package (.whl)
+
+    Upload the release artifact
+
+  Artifacts are only built and uploaded when a change is merged to the main branch.
+
+**Create a Pull Request**
+
+*Here’s how to demonstrate your rules:*
+
+*Branch Protection*
+
+Make sure these are already enabled under **Settings > Branches > main**:
+
+- Require pull request reviews
+- Require status checks to pass
+- Disable direct pushes
+
+**Make a PR**
+
+1. Create a new branch:
+   
+   - git checkout -b update-readme
+
+Commit your changes to README.md:
+
+  - git add README.md
+  
+  - git commit -m "Update README with test and CI/CD instructions"
+  
+  - git push origin update-readme
+
+2.	Go to GitHub and create a Pull Request to the main.
+
+Confirm in PR:
+
+- Tests pass (you’ll see a green check)
+  
+- Cannot merge if tests fail
+  
+- Once merged, a .whl artifact is created in the Actions tab (if ci.yml is set up correctly)
+
+  
+
+
+
 
 
 

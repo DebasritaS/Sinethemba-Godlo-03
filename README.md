@@ -275,7 +275,76 @@ The following are screenshots of my main branch protection rules:
 
 ## CI Pipeline: Test Automation
 
+### [.github/workflows/ci.yml](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/f5d1bb2df855153614388a999df952c5bb8a4c2d/.github/workflows/ci.yml)
+
+1. **Set Up Your GitHub Actions Workflow**
+*Here's an example ci.yml that:*
+
+- Runs tests using pytest
+
+- Saves test results (.xml or .html)
+
+- Uploads them as artifacts
+
+- Then (optionally) attaches them to a GitHub Release
+
+2. **Trigger the Workflow by Tagging a Release**
+
+  *Create a Git tag and push it:*
+  *git tag v1.0.0
+  git push origin v1.0.0*
+
+  This will:
+  
+  - Run tests
+  
+ - Upload the test result as an artifact
+  
+  - Create a GitHub Release
+  
+  - Attach the results.xml to the release
+
+   
+3. **View the Results**
+   
+- Go to the Actions tab → click the workflow run.
+
+- See the test logs under the "test" job.
+
+- Click "Artifacts" to download the test report.
+
+- OR visit the Releases tab in GitHub → click your release → download the test report file.
+
+![image](https://github.com/user-attachments/assets/6ef7182f-b031-422f-b912-17a8302f801e)
+![image](https://github.com/user-attachments/assets/9a59e260-0550-4896-85e7-775d7b1b5454)
+
+
+
+
 ## CD Pipeline: Release Artifact
+
+[.github/workflows/ci.yml for deployment](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/f5d1bb2df855153614388a999df952c5bb8a4c2d/.github/workflows/release.yml)
+
+1. Ensure You Have a Test Job in Your Workflow
+   
+  - Your GitHub Actions YAML should have a test step.
+    
+2. Trigger the Workflow
+
+   - Push a commit or open a pull request to trigger the workflow.
+
+3. View Test Results in the GitHub UI
+
+   - Go to your repo → Actions tab.
+   - Click the workflow run.
+   - In the Jobs section, click the test job.
+   - Expand the "Run tests" step to see pytest or other test output.
+
+![image](https://github.com/user-attachments/assets/81899633-e4dc-4e16-b00e-a3b093fbce09)
+
+![image](https://github.com/user-attachments/assets/73b65d8f-755d-44cd-9515-1e3e4bef52ab)
+
+![image](https://github.com/user-attachments/assets/e85e790e-1ca1-4aef-a309-ee4c87b19b67)
 
 ## Documentation & PR Workflow
 

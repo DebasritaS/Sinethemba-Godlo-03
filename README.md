@@ -291,8 +291,10 @@ The following are screenshots of my main branch protection rules:
 2. **Trigger the Workflow by Tagging a Release**
 
   *Create a Git tag and push it:*
-  *git tag v1.0.0
-  git push origin v1.0.0*
+  
+  *git tag v1.0.0*
+  
+  *git push origin v1.0.0*
 
   This will:
   

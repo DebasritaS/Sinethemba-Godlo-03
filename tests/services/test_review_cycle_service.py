@@ -58,3 +58,6 @@ class TestReviewCycleService(unittest.TestCase):
         active = self.service.list_active_cycles()
         self.assertEqual(len(active), 1)
         self.assertEqual(active[0].cycle_id, "C4")
+
+def close(self):
+    self.status = "completed"

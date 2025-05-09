@@ -11,7 +11,7 @@ from fastapi import FastAPI
 from src.routes import user_routes
 from datetime import datetime
 
-from src.models.entities.review_cycle import ReviewCycle
+from src.models.review_cycle import ReviewCycle
 
 
 

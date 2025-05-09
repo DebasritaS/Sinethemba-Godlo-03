@@ -42,3 +42,6 @@ class TestAuditLogService(unittest.TestCase):
         logs = self.service.list_logs_for_user("U1")
         self.assertEqual(len(logs), 2)
         self.assertTrue(all(log.user_id == "U1" for log in logs))
+
+if __name__ == "__main__":
+    unittest.main()

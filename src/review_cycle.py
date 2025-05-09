@@ -12,7 +12,7 @@ class ReviewCycle:
         return [task for task in self.__tasks if not task._ReviewTask__completed]
 
 class ReviewCycle:
-    def __init__(self, name, start, end):
+    def __init__(self, name, start, end, task):
         self.name = name
         self.start = start
         self.end = end

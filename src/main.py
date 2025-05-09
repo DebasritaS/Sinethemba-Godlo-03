@@ -5,9 +5,19 @@ from review_cycle import ReviewCycle
 from audit_log import AuditLog
 from notification_service import NotificationService
 from datetime import datetime
+from fastapi import FastAPI
+from src.routes import review_cycle_router, audit_log_router
+from fastapi import FastAPI
+from src.routes import user_routes
+from datetime import datetime
+from src.models.review_cycle import ReviewCycle
+
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'src')))
 
 # Create instances
-user = User(user_id=1001, name="Alice", email="alice@example.com", roles=["Reviewer"])
+user = User(user_id=1, name="Alice", email="alice@example.com", roles=["Reviewer"])
 print("User ID:", user.get_user_id())
 print("Name:", user.get_name())
 print("Email:", user.get_email())
@@ -61,5 +71,27 @@ notifier.send_notification(user, "Your access has been granted.")
 # Review cycle
 start_date = datetime(2025, 4, 1)
 end_date = datetime(2025, 6, 30)
-cycle = ReviewCycle("Quarterly", start_date, end_date)
-cycle.add_task(task)
+cycle = ReviewCycle("Quarterly", start_date, end_date, status="Active")
+task = "Sample Task"
+print("Quarterly", cycle.start_date, cycle.end_date, cycle.status)
+
+
+app = FastAPI()
+app.include_router(review_cycle_router.router, prefix="/review-cycles", tags=["Review Cycles"])
+app.include_router(audit_log_router.router, prefix="/audit-logs", tags=["Audit Logs"])
+
+app = FastAPI()
+app.include_router(user_routes.router)
+
+app = FastAPI(
+    title="User Access Review API",
+    description="Manages users, access requests, review cycles, and audit logs for an access management system.",
+    version="1.0.0",
+    contact={
+        "name": "Sinethemba Godlo",
+        "email": "youremail@example.com",
+    }
+)
+
+app.include_router(review_cycle_router.router)
+app.include_router(audit_log_router.router)

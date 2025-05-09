@@ -24,3 +24,11 @@ def test_log_and_fetch_audit_entries():
     response = client.get("/audit-logs/")
     assert response.status_code == 200
     assert isinstance(response.json(), list)
+
+    log = AuditLog(
+    log_id="123",
+    user_id="user_1",
+    action="created",
+    details="Created new user.",
+    timestamp="2025-05-09T12:00:00Z"
+    )

@@ -13,6 +13,12 @@ class ReviewCycle:
     def add_task(self, task):
         self.tasks.append(task)
 
+class ReviewCycle(BaseModel):
+    cycle_id: str
+    start_date: str
+    end_date: str
+    status: str
+
 
 class ReviewCycleCreateRequest(BaseModel):
     name: str

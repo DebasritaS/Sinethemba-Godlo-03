@@ -1,3 +1,15 @@
+from datetime import datetime
+
+# This is the data model used in services and tests
+class AuditLog:
+    def __init__(self, log_id: str, user_id: str, action: str, resource_id: str, timestamp: datetime):
+        self.log_id = log_id
+        self.user_id = user_id
+        self.action = action
+        self.resource_id = resource_id
+        self.timestamp = timestamp
+
+
 class AuditLog:
     def __init__(self):
         self._entries = []

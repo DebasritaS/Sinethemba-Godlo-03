@@ -1,13 +1,13 @@
 import unittest
-from src.repositories.in_memory_user_repository import InMemoryUserRepository
-from src.models.user import User
+from src.repositories.in_memory_user_repository import InMemoryRepository
+from src.models.user import UserCreateRequest
 
 
 
 class TestInMemoryUserRepository(unittest.TestCase):
 
     def setUp(self):
-        self.repo = InMemoryUserRepository()
+        self.repo = InMemoryRepository()
 
     def test_create_and_read_user(self):
         user = User(user_id="1", name="Alice", email="alice@example.com", roles=["Admin"])

@@ -416,12 +416,55 @@ Confirm in PR:
   
 - Once merged, a .whl artifact is created in the Actions tab (if ci.yml is set up correctly)
 
-  
+# Peer Review, Onboarding, and Open-Source Collaboration
+
+## ROADMAP — User Access Review System
+
+This document outlines planned features and enhancements for the **User Access Review System**. Contributions and suggestions are welcome!
+
+### Getting Started
+
+1. **Fork the repository** on GitHub.
+2.  **Clone the repository:**
+
+   ``bash
+   git clone https://github.com/Godlos252/Sinethemba-Godlo-03.git``
+   
+   ``cd Sinethemba-Godlo-03``
+
+3. **Create a virtual environment**:
+   
+*python -m venv venv*
+
+*source venv/bin/activate*
+
+4. **Install dependencies**:
+   
+*pip install -r requirements.txt*
+
+5. **Run tests** to ensure everything is set up correctly:
+   
+*Pytest*
+
+6. Pick an issue from *Good First Issues*
+
+**Features for Contribution**
 
 
+| Feature Area              | Description                                          | Status     | Contribution Type / label    |
+| ------------------------- | ---------------------------------------------------- | ---------- | -------------------- |
+| Audit Logging             | Log every approval, rejection, and escalation        | ✅ Done     | Testing / Review     |
+| Review Task Dashboard     | UI to show pending tasks per reviewer                | 🚧 Planned | Feature Request / enhancement  |
+| CSV Export                | Export completed reviews for compliance              | 🚧 Planned | Feature Request / enhancement      |
+| Redis Caching             | Cache active users & access requests for performance | 🧠 Future  | Optimization |
+| Notification System       | Add Slack/MS Teams integration                       | 🚧 Planned | Integration / enhancement           |
+| Role-Based Access Control | Different views for Admin, Manager, Auditor          | 🚧 Planned | Backend / Security   |
+| Auto Recommendations      | Suggest revocations based on activity                | 🧠 Future  | Machine Learning     |
 
 
+[CONTRIBUTING.md]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/3b1a50ee5a340aa9827124638d8fe012fd7a1059/CONTRIBUTING.md) 
 
+[ROADMAP.md]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/3d346231c9556466b6836201b5d3374832c84715/ROADMAP.md)
 
 
 

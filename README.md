@@ -3,6 +3,82 @@
 
 A User Access Review is a crucial component of the organization's security and compliance strategy. This process is conducted periodically to verify and validate users' access to IT application systems, ensuring that only necessary authorizations are granted. A well-functioning User Access Review System ensures appropriate access to the correct individuals.
 
+## ROADMAP — User Access Review System
+
+This document outlines planned features and enhancements for the **User Access Review System**. Contributions and suggestions are welcome!
+
+### Getting Started
+
+1. **Fork the repository** on GitHub.
+2.  **Clone the repository:**
+
+   ``bash
+   git clone https://github.com/Godlos252/Sinethemba-Godlo-03.git``
+   
+   ``cd Sinethemba-Godlo-03``
+
+3. **Create a virtual environment**:
+   
+*python -m venv venv*
+
+*source venv/bin/activate*
+
+4. **Install dependencies**:
+   
+*pip install -r requirements.txt*
+
+5. **Run tests** to ensure everything is set up correctly:
+   
+*Pytest*
+
+6. Pick an issue from *Good First Issues*
+
+**Features for Contribution**
+
+
+| Feature Area              | Description                                          | Status     | Contribution Type / label    |
+| ------------------------- | ---------------------------------------------------- | ---------- | -------------------- |
+| Audit Logging             | Log every approval, rejection, and escalation        | ✅ Done     | Testing / Review     |
+| Review Task Dashboard     | UI to show pending tasks per reviewer                | 🚧 Planned | Feature Request / enhancement  |
+| CSV Export                | Export completed reviews for compliance              | 🚧 Planned | Feature Request / enhancement      |
+| Redis Caching             | Cache active users & access requests for performance | 🧠 Future  | Optimization |
+| Notification System       | Add Slack/MS Teams integration                       | 🚧 Planned | Integration / enhancement           |
+| Role-Based Access Control | Different views for Admin, Manager, Auditor          | 🚧 Planned | Backend / Security   |
+| Auto Recommendations      | Suggest revocations based on activity                | 🧠 Future  | Machine Learning     |
+
+
+[CONTRIBUTING.md]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/3b1a50ee5a340aa9827124638d8fe012fd7a1059/CONTRIBUTING.md) 
+
+[ROADMAP.md]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/3d346231c9556466b6836201b5d3374832c84715/ROADMAP.md)
+
+![image](https://github.com/user-attachments/assets/5bfb40ea-938e-4009-a0b5-13022ffe369e)
+
+
+### MIT License
+
+``Copyright (c) 2025 **Sinethemba Godlo 03**``
+
+``Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights 
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+copies of the Software, and to permit persons to whom the Software is 
+furnished to do so, subject to the following conditions:``
+
+``The above copyright notice and this permission notice shall be included in 
+all copies or substantial portions of the Software.``
+
+``THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE.``
+
+
+
+
 # System Specification and Architectural Modeling
 
 ## [SPECIFICATION.md](https://github.com/Godlos252/Sinethemba-Godlo-03/blob/463bbf2170abfccb23d0b52891094e9074aab2d7/SPECIFICATION.md)

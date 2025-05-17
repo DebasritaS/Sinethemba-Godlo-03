@@ -20,16 +20,15 @@ Before you begin, ensure you have the following installed:
 ### Installation
 
 1. **Clone the repository:**
-
-   ```bash
+    ```bash
    git clone https://github.com/Godlos252/Sinethemba-Godlo-03.git
    cd Sinethemba-Godlo-03
    ```
 2. **Create a virtual environment by running the following in the terminal:**
-  ```bash
-  python -m venv venv
-  source venv/bin/activate
-  ```
+   ```bash
+    python -m venv venv
+    source venv/bin/activate
+    ```
 
 
 3. **Install dependencies by running the following in the terminal:**
@@ -38,8 +37,7 @@ Before you begin, ensure you have the following installed:
    ```
 
 4. **Run tests to ensure everything is set up correctly  in the terminal:**
-   
-  ```bash
+   ```bash
    pytest
    ```
 

@@ -3,9 +3,11 @@
 
 A User Access Review is a crucial component of the organization's security and compliance strategy. This process is conducted periodically to verify and validate users' access to IT application systems, ensuring that only necessary authorizations are granted. A well-functioning User Access Review System ensures appropriate access to the correct individuals.
 
-## ROADMAP — User Access Review System
+# Peer Review, Onboarding, and Open-Source Collaboration
 
-This document outlines planned features and enhancements for the **User Access Review System**. Contributions and suggestions are welcome!
+## User Access Review System
+
+This document outlines planned features and enhancements for the **User Access Review System**.
 
 ### Getting Started
 
@@ -47,34 +49,41 @@ This document outlines planned features and enhancements for the **User Access R
 | Auto Recommendations      | Suggest revocations based on activity                | 🧠 Future  | Machine Learning     |
 
 
-[CONTRIBUTING.md]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/3b1a50ee5a340aa9827124638d8fe012fd7a1059/CONTRIBUTING.md) 
+### [CONTRIBUTING.md]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/3b1a50ee5a340aa9827124638d8fe012fd7a1059/CONTRIBUTING.md) 
 
-[ROADMAP.md]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/3d346231c9556466b6836201b5d3374832c84715/ROADMAP.md)
+### [ROADMAP.md]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/3d346231c9556466b6836201b5d3374832c84715/ROADMAP.md)
 
 ![image](https://github.com/user-attachments/assets/5bfb40ea-938e-4009-a0b5-13022ffe369e)
 
 
-### MIT License
+### [License]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/6de9c7b1861a9c57c6180d864b922fc1f2e2d597/LICENSE)
 
-``Copyright (c) 2025 **Sinethemba Godlo 03**``
+### [Voting](https://github.com/Godlos252/Sinethemba-Godlo-03/stargazers)
 
-``Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights 
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
-copies of the Software, and to permit persons to whom the Software is 
-furnished to do so, subject to the following conditions:``
+![image](https://github.com/user-attachments/assets/a328eeff-822b-4c06-91c9-59ca809ea398)
 
-``The above copyright notice and this permission notice shall be included in 
-all copies or substantial portions of the Software.``
+![image](https://github.com/user-attachments/assets/5f6bec35-8afd-4813-9584-315bf04e8557)
 
-``THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
-THE SOFTWARE.``
+### Reflection
+
+1. Improving the Repository Based on Peer Feedback
+Early feedback from contributors and peers highlighted several areas for improvement — most notably, documentation gaps, unclear test coverage, and directory structure confusion. To address this, I created a comprehensive CONTRIBUTING.md file with clear setup instructions, coding standards, and guidance on submitting pull requests. I also improved the test framework, fixed broken imports by correcting the module pathing, and restructured the src/ directory to be more intuitive.
+Peer feedback also led me to tag beginner-friendly issues, improve error messages, and write a ROADMAP.md to communicate long-term goals. This helped new contributors better understand where the project was going and what they could contribute to. Small touches like adding a LICENSE file and a Getting Started section were directly inspired by feedback that newcomers felt “lost” when landing on the repo.
+
+3. Challenges in Onboarding Contributors
+The users liked and forked my project, one or two actioned the issues with formatting the CONTRIBUTION.md, there were no issues or challenges.
+ ![image](https://github.com/user-attachments/assets/c09b54b1-0e1d-459e-9974-b54a47a6ef5e)
+
+
+4. Lessons Learned About Open-Source Collaboration
+One of the most important lessons I’ve learned is the value of clear communication and structure. Open-source projects live or die by how easily others can get involved. Documentation, issue tagging, and helpful code comments matter more than clever code.
+I’ve also learned to be responsive but patient. Contributors sometimes submit partial pull requests, make formatting errors, or misunderstand the feature scope. Instead of rejecting those outright, I started offering supportive comments, linking style guides, and proposing changes. This mentorship-first mindset builds trust and encourages learning.
+Another powerful takeaway was the benefit of automated workflows. Setting up GitHub Actions for continuous integration meant contributors got immediate feedback on their pull requests. This not only reduced my review burden but helped contributors troubleshoot problems independently.
+
+
+
+
+
 
 
 
@@ -494,10 +503,7 @@ Confirm in PR:
 
 # Peer Review, Onboarding, and Open-Source Collaboration
 
-## ROADMAP — User Access Review System
-
 This document outlines planned features and enhancements for the **User Access Review System**. Contributions and suggestions are welcome!
-
 ### Getting Started
 
 1. **Fork the repository** on GitHub.
@@ -538,10 +544,36 @@ This document outlines planned features and enhancements for the **User Access R
 | Auto Recommendations      | Suggest revocations based on activity                | 🧠 Future  | Machine Learning     |
 
 
-[CONTRIBUTING.md]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/3b1a50ee5a340aa9827124638d8fe012fd7a1059/CONTRIBUTING.md) 
+### [CONTRIBUTING.md]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/3b1a50ee5a340aa9827124638d8fe012fd7a1059/CONTRIBUTING.md) 
 
-[ROADMAP.md]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/3d346231c9556466b6836201b5d3374832c84715/ROADMAP.md)
+### [ROADMAP.md]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/3d346231c9556466b6836201b5d3374832c84715/ROADMAP.md)
 
+![image](https://github.com/user-attachments/assets/5bfb40ea-938e-4009-a0b5-13022ffe369e)
+
+
+### [License]( https://github.com/Godlos252/Sinethemba-Godlo-03/blob/6de9c7b1861a9c57c6180d864b922fc1f2e2d597/LICENSE)
+
+### [Voting](https://github.com/Godlos252/Sinethemba-Godlo-03/stargazers)
+
+![image](https://github.com/user-attachments/assets/a328eeff-822b-4c06-91c9-59ca809ea398)
+
+![image](https://github.com/user-attachments/assets/5f6bec35-8afd-4813-9584-315bf04e8557)
+
+### Reflection
+
+1. Improving the Repository Based on Peer Feedback
+Early feedback from contributors and peers highlighted several areas for improvement — most notably, documentation gaps, unclear test coverage, and directory structure confusion. To address this, I created a comprehensive CONTRIBUTING.md file with clear setup instructions, coding standards, and guidance on submitting pull requests. I also improved the test framework, fixed broken imports by correcting the module pathing, and restructured the src/ directory to be more intuitive.
+Peer feedback also led me to tag beginner-friendly issues, improve error messages, and write a ROADMAP.md to communicate long-term goals. This helped new contributors better understand where the project was going and what they could contribute to. Small touches like adding a LICENSE file and a Getting Started section were directly inspired by feedback that newcomers felt “lost” when landing on the repo.
+
+3. Challenges in Onboarding Contributors
+The users liked and forked my project, one or two actioned the issues with formatting the CONTRIBUTION.md, there were no issues or challenges.
+ ![image](https://github.com/user-attachments/assets/c09b54b1-0e1d-459e-9974-b54a47a6ef5e)
+
+
+4. Lessons Learned About Open-Source Collaboration
+One of the most important lessons I’ve learned is the value of clear communication and structure. Open-source projects live or die by how easily others can get involved. Documentation, issue tagging, and helpful code comments matter more than clever code.
+I’ve also learned to be responsive but patient. Contributors sometimes submit partial pull requests, make formatting errors, or misunderstand the feature scope. Instead of rejecting those outright, I started offering supportive comments, linking style guides, and proposing changes. This mentorship-first mindset builds trust and encourages learning.
+Another powerful takeaway was the benefit of automated workflows. Setting up GitHub Actions for continuous integration meant contributors got immediate feedback on their pull requests. This not only reduced my review burden but helped contributors troubleshoot problems independently.
 
 
 

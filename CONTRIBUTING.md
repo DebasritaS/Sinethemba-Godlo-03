@@ -24,10 +24,10 @@ Before you begin, ensure you have the following installed:
    git clone https://github.com/Godlos252/Sinethemba-Godlo-03.git
    cd Sinethemba-Godlo-03
    ```
-2. **Create a virtual environment by running the following in the terminal:**
+2. **Create a virtual environment:**
    ```bash
     python -m venv venv
-    source venv/bin/activate
+   Note for Windows users: Use venv\Scripts\activate instead.
     ```
 
 
@@ -36,7 +36,7 @@ Before you begin, ensure you have the following installed:
    pip install -r requirements.txt
    ```
 
-4. **Run tests to ensure everything is set up correctly  in the terminal:**
+4. **Run tests to ensure everything is set up correctly in the terminal:**
    ```bash
    pytest
    ```
@@ -57,7 +57,7 @@ All new code should include relevant unit tests.
 
 -	Use pytest to write and run tests.
 
--	Test files are located under the tests/ directory and should be named test_*.py.
+-	Test files are located under the `tests/` directory and should be named `test_*.py`.
   
 **Run all tests:**
 ```bash
@@ -70,7 +70,7 @@ pytest
 
 -	Check the Issues tab.
 
--	Look for labels like good first issue or help wanted.
+-	Look for labels like `good first issue` or `help wanted`.
 
 If you're unsure where to start, feel free to comment on an issue and ask!
 
@@ -83,7 +83,7 @@ If you're unsure where to start, feel free to comment on an issue and ask!
   git checkout -b issue-NUMBER
   ```
 
--	Write your code and add tests.
+-	Write your code and include appropriate tests.
 
 -	Run linting and tests locally before committing.
 
